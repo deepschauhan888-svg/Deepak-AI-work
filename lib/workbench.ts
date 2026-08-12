@@ -3,7 +3,7 @@ export type WorkbenchItem = {
   title: string;
   blurb: string;
   tagline?: string;
-  aiHelpsWith?: string;
+  aiHelpsWith?: string[];
   humanLed?: string;
 };
 

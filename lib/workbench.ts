@@ -2,6 +2,7 @@ export type WorkbenchItem = {
   n: string;
   title: string;
   tagline: string;
+  blurb: string;
   aiHelpsWith: string[];
   humanLed: string;
 };
@@ -11,6 +12,8 @@ export const WORKBENCH: WorkbenchItem[] = [
     n: "01",
     title: "Research Reports",
     tagline: "Turning research findings into a sharper final read.",
+    blurb:
+      "AI helps structure the report, extract insight and sharpen the narrative — from the executive summary down to the headline.",
     aiHelpsWith: [
       "Report structures and executive summaries",
       "Forewords and research narratives",
@@ -24,6 +27,8 @@ export const WORKBENCH: WorkbenchItem[] = [
     n: "02",
     title: "Valuation Reports",
     tagline: "Client-ready valuation writing, built on my analysis.",
+    blurb:
+      "AI supports the writing and formatting of valuation reports, including comparable-property storytelling and market context.",
     aiHelpsWith: [
       "Valuation report structure and writing",
       "Comparable-property storytelling",
@@ -37,6 +42,8 @@ export const WORKBENCH: WorkbenchItem[] = [
     n: "03",
     title: "Report Design",
     tagline: "Prompting AI design tools to build the visual direction.",
+    blurb:
+      "I write a detailed prompt describing what a report needs to communicate, then use AI design tools to build and iterate the layout.",
     aiHelpsWith: [
       "Page layouts and information hierarchy",
       "Charts, maps and visual concepts",
@@ -50,6 +57,8 @@ export const WORKBENCH: WorkbenchItem[] = [
     n: "04",
     title: "Presentation Design",
     tagline: "From research content to executive-ready decks.",
+    blurb:
+      "AI helps turn a research or valuation narrative into an executive-ready deck — structure, slide flow and visual concepts.",
     aiHelpsWith: [
       "Executive presentation structures",
       "Slide narratives and visual stories",
@@ -63,6 +72,8 @@ export const WORKBENCH: WorkbenchItem[] = [
     n: "05",
     title: "Articles & Content",
     tagline: "Research-led writing, edited and sharpened faster.",
+    blurb:
+      "AI helps with article structures, headlines and edits, while the research and point of view remain mine.",
     aiHelpsWith: [
       "Article structures and editorial angles",
       "Headlines and rewriting",
@@ -76,6 +87,8 @@ export const WORKBENCH: WorkbenchItem[] = [
     n: "06",
     title: "Excel Models",
     tagline: "Analytical models built to hold up under scrutiny.",
+    blurb:
+      "AI helps build and stress-test the formula logic behind valuation and analytical models.",
     aiHelpsWith: [
       "Complex formula logic",
       "Valuation and analytical models",
@@ -89,6 +102,8 @@ export const WORKBENCH: WorkbenchItem[] = [
     n: "07",
     title: "Excel Automation",
     tagline: "Repetitive workbooks turned into repeatable workflows.",
+    blurb:
+      "AI turns repetitive Excel work — data cleaning, classification, calculations — into repeatable, automated workflows.",
     aiHelpsWith: [
       "Data cleaning and classification",
       "Repeatable reporting workflows",
@@ -102,6 +117,8 @@ export const WORKBENCH: WorkbenchItem[] = [
     n: "08",
     title: "Brainstorming & Ideation",
     tagline: "AI as a second brain, not a first source of ideas.",
+    blurb:
+      "AI challenges an initial idea, helps identify gaps and turns rough thinking into a structured, presentable framework.",
     aiHelpsWith: [
       "Challenging the initial idea",
       "Identifying gaps and alternatives",
@@ -115,6 +132,8 @@ export const WORKBENCH: WorkbenchItem[] = [
     n: "09",
     title: "Prompt Engineering",
     tagline: "How the problem is framed decides the quality of the output.",
+    blurb:
+      "Writing a precise prompt — especially for tools like Claude — is part of the workflow, not a separate skill.",
     aiHelpsWith: [
       "Turning a rough requirement into a precise instruction",
       "Sequencing multi-step requests",
@@ -128,6 +147,8 @@ export const WORKBENCH: WorkbenchItem[] = [
     n: "10",
     title: "Maps & Visualisation",
     tagline: "Location intelligence, designed to be read at a glance.",
+    blurb:
+      "AI helps design market maps and connectivity visuals once the underlying location read is mine.",
     aiHelpsWith: [
       "Market and micro-market maps",
       "Infrastructure and metro connectivity visuals",
@@ -141,6 +162,8 @@ export const WORKBENCH: WorkbenchItem[] = [
     n: "11",
     title: "Internal Tools",
     tagline: "Recurring problems, turned into reusable tools.",
+    blurb:
+      "Recurring tasks — trackers, data processing, reporting — get prototyped as small reusable tools instead of redone by hand.",
     aiHelpsWith: [
       "Prototyping small internal tools",
       "Research and valuation trackers",
@@ -154,6 +177,8 @@ export const WORKBENCH: WorkbenchItem[] = [
     n: "12",
     title: "Workflow Redesign",
     tagline: "Rebuilding how a piece of work gets done, not just doing it faster.",
+    blurb:
+      "AI helps map where time goes in a workflow and redesign the sequence end to end, not just speed up the old process.",
     aiHelpsWith: [
       "Mapping where time actually goes in a workflow",
       "Identifying which steps AI can carry",

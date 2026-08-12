@@ -32,12 +32,4 @@ export const CASE_STUDIES: CaseStudy[] = [
     process: "Analysis → structure → narrative → design → review.",
     output: "A professional valuation report.",
   },
-  {
-    n: "04",
-    title: "Idea → Initiative",
-    oneLine: "A rough idea, structured into something worth discussing.",
-    input: "An initial business or research idea.",
-    process: "Brainstorm → challenge → refine → framework → presentation.",
-    output: "A structured initiative, ready for discussion.",
-  },
 ];

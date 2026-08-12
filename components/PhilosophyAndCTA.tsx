@@ -7,7 +7,7 @@ const TOOLS = ["ChatGPT", "Claude", "Excel", "Canva", "GitHub", "Vercel"];
 
 export default function PhilosophyAndCTA() {
   return (
-    <section className="relative py-24 md:py-32 bg-ink plot-grid-dark overflow-hidden">
+    <section className="relative py-20 md:py-24 bg-ink plot-grid-dark overflow-hidden">
       <div className="relative max-w-4xl mx-auto px-6 md:px-10 text-center">
         <motion.p
           initial={{ opacity: 0, y: 10 }}
@@ -57,7 +57,7 @@ export default function PhilosophyAndCTA() {
         </motion.div>
 
         {/* Final CTA */}
-        <div className="mt-20 border-t border-ink-line pt-16">
+        <div className="mt-14 border-t border-ink-line pt-12">
           <motion.p
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -102,7 +102,7 @@ export default function PhilosophyAndCTA() {
             </a>
           </motion.div>
 
-          <p className="mt-16 font-mono text-[11px] tracking-wide text-cream-dim/70">
+          <p className="mt-10 font-mono text-[11px] tracking-wide text-cream-dim/70">
             Designed &amp; built with AI as an execution layer. © {new Date().getFullYear()}
           </p>
         </div>

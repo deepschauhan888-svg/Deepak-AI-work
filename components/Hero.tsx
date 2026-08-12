@@ -6,7 +6,7 @@ import { LINKEDIN_URL, FULL_NAME, POSITIONING } from "@/lib/constants";
 export default function Hero() {
   return (
     <section id="top" className="relative min-h-[100svh] flex items-center plot-grid-light overflow-hidden">
-      <div className="max-w-6xl mx-auto w-full px-6 md:px-10 pt-24 pb-14">
+      <div className="max-w-6xl mx-auto w-full px-6 md:px-10 pt-20 pb-10">
         <div className="grid md:grid-cols-12 gap-10 md:gap-8 items-center">
           {/* Left: copy */}
           <div className="md:col-span-7 order-2 md:order-1">

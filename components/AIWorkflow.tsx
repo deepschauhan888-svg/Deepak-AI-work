@@ -5,16 +5,15 @@ import { motion } from "framer-motion";
 const STEPS = [
   { n: "01", title: "Think", detail: "I identify the problem or idea." },
   { n: "02", title: "Refine", detail: "AI challenges my assumptions and sharpens it." },
-  { n: "03", title: "Prompt", detail: "I turn the requirement into a precise instruction." },
-  { n: "04", title: "Build", detail: "AI creates the first working version." },
-  { n: "05", title: "Iterate", detail: "I review, correct and push it further." },
-  { n: "06", title: "Automate", detail: "Where possible, it becomes repeatable." },
-  { n: "07", title: "Deliver", detail: "The output is work-ready." },
+  { n: "03", title: "Build", detail: "AI creates the first working version." },
+  { n: "04", title: "Iterate", detail: "I review, correct and push it further." },
+  { n: "05", title: "Automate", detail: "Where possible, it becomes repeatable." },
+  { n: "06", title: "Deliver", detail: "The output is work-ready." },
 ];
 
 export default function AIWorkflow() {
   return (
-    <section id="ai" className="relative py-20 md:py-24 bg-ink plot-grid-dark">
+    <section id="ai" className="relative py-16 md:py-20 bg-ink plot-grid-dark">
       <div className="max-w-6xl mx-auto px-6 md:px-10">
         <motion.p
           initial={{ opacity: 0, y: 10 }}
@@ -35,7 +34,7 @@ export default function AIWorkflow() {
           Not a tool I reach for. <span className="italic text-gold-soft">A layer in how I work.</span>
         </motion.h2>
 
-        <div className="mt-14 relative">
+        <div className="mt-10 relative">
           <div className="hidden md:block absolute left-0 right-0 top-5 h-px bg-ink-line" />
           <motion.div
             className="hidden md:block absolute left-0 top-5 h-px bg-gold-soft origin-left"
@@ -45,7 +44,7 @@ export default function AIWorkflow() {
             transition={{ duration: 1.4, ease: "easeInOut" }}
           />
 
-          <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-7 gap-x-4 gap-y-8">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-x-4 gap-y-8">
             {STEPS.map((step, i) => (
               <motion.div
                 key={step.n}

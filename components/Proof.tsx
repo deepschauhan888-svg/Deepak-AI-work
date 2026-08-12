@@ -6,13 +6,13 @@ const PROCESS = ["Manual", "Logic", "AI-assisted", "Repeatable"];
 
 export default function Proof() {
   return (
-    <section id="proof" className="relative py-20 md:py-24 bg-ink plot-grid-dark overflow-hidden">
+    <section id="proof" className="relative py-16 md:py-20 bg-ink plot-grid-dark overflow-hidden">
       <div className="relative max-w-6xl mx-auto px-6 md:px-10">
         <motion.p
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="eyebrow-dark mb-8 text-center"
+          className="eyebrow-dark mb-6 text-center"
         >
           Selected Complex Excel Workflows
         </motion.p>
@@ -23,10 +23,10 @@ export default function Proof() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="flex items-center gap-4 md:gap-8 font-display text-[13vw] md:text-7xl leading-none"
+            className="flex items-center gap-4 md:gap-6 font-display text-[12vw] md:text-6xl leading-none"
           >
             <span className="text-cream">2 days</span>
-            <span className="text-gold-soft text-4xl md:text-5xl">→</span>
+            <span className="text-gold-soft text-3xl md:text-4xl">→</span>
             <span className="text-gold-soft italic">20 min</span>
           </motion.div>
 
@@ -35,7 +35,7 @@ export default function Proof() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="mt-6 max-w-xl text-[15px] leading-relaxed text-cream-dim"
+            className="mt-5 max-w-xl text-[15px] leading-relaxed text-cream-dim"
           >
             Some workflows that previously required roughly two days of manual
             effort can now be completed in around 20 minutes in selected cases.
@@ -46,7 +46,7 @@ export default function Proof() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.3 }}
-            className="mt-10 flex items-center gap-3 md:gap-5 flex-wrap justify-center"
+            className="mt-8 flex items-center gap-3 md:gap-5 flex-wrap justify-center"
           >
             {PROCESS.map((step, i) => (
               <div key={step} className="flex items-center gap-3 md:gap-5">

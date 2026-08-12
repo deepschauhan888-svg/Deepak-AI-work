@@ -5,15 +5,15 @@ import { motion } from "framer-motion";
 const FOCUS_AREAS = [
   "Real Estate Research",
   "Valuation & Analytics",
-  "Data & Excel",
+  "Excel & Automation",
   "Report & Presentation Design",
-  "AI & Automation",
   "Market Intelligence",
+  "AI Workflows",
 ];
 
 export default function WhoAndWhat() {
   return (
-    <section id="about" className="relative py-20 md:py-24 bg-ivory">
+    <section id="about" className="relative py-16 md:py-20 bg-ivory">
       <div className="max-w-6xl mx-auto px-6 md:px-10">
         <motion.p
           initial={{ opacity: 0, y: 10 }}

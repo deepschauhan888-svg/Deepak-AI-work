@@ -8,18 +8,18 @@ export default function CaseStudies() {
   const [active, setActive] = useState<number | null>(null);
 
   return (
-    <section className="relative py-20 md:py-24 bg-ivory">
+    <section className="relative py-16 md:py-20 bg-ivory">
       <div className="max-w-6xl mx-auto px-6 md:px-10">
         <motion.p
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="eyebrow-light mb-10"
+          className="eyebrow-light mb-8"
         >
           Case Studies
         </motion.p>
 
-        <div className="grid sm:grid-cols-2 gap-4">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {CASE_STUDIES.map((cs, i) => {
             const isActive = active === i;
             return (

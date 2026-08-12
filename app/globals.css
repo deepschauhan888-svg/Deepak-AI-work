@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  color-scheme: dark;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -25,54 +21,64 @@ html {
 }
 
 body {
-  background-color: #0b0c0e;
-  color: #f4f1e9;
+  background-color: #f3eee3;
+  color: #221f1a;
 }
 
 ::selection {
-  background: #b08d4f;
-  color: #0b0c0e;
+  background: #a9812e;
+  color: #f3eee3;
 }
 
-/* Visible keyboard focus everywhere */
 :focus-visible {
-  outline: 1.5px solid #b08d4f;
+  outline: 1.5px solid #a9812e;
   outline-offset: 3px;
   border-radius: 2px;
 }
 
-/* Thin scrollbar to match the editorial system */
 ::-webkit-scrollbar {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #0b0c0e;
+  background: #f3eee3;
 }
 ::-webkit-scrollbar-thumb {
-  background: #242422;
-  border: 2px solid #0b0c0e;
+  background: #dcd3be;
+  border: 2px solid #f3eee3;
   border-radius: 6px;
 }
 
-.plot-grid {
+/* Fine survey/plot grid — light lines on dark surfaces, dark lines on light surfaces */
+.plot-grid-dark {
   background-image:
-    linear-gradient(to right, rgba(244, 241, 233, 0.045) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(244, 241, 233, 0.045) 1px, transparent 1px);
-  background-size: 56px 56px;
+    linear-gradient(to right, rgba(243, 238, 227, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(243, 238, 227, 0.05) 1px, transparent 1px);
+  background-size: 48px 48px;
 }
 
-.eyebrow {
+.plot-grid-light {
+  background-image:
+    linear-gradient(to right, rgba(34, 31, 26, 0.055) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(34, 31, 26, 0.055) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.eyebrow-light {
   font-family: var(--font-mono), monospace;
-  letter-spacing: 0.28em;
+  letter-spacing: 0.24em;
   text-transform: uppercase;
-  font-size: 0.68rem;
-  color: #b08d4f;
+  font-size: 0.66rem;
+  color: #a9812e;
+}
+
+.eyebrow-dark {
+  font-family: var(--font-mono), monospace;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  font-size: 0.66rem;
+  color: #c9a227;
 }
 
 .text-balance {
   text-wrap: balance;
-}
-
-.hairline {
-  border-color: #242422;
 }

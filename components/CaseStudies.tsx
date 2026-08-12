@@ -5,67 +5,81 @@ import { motion, AnimatePresence } from "framer-motion";
 import { CASE_STUDIES } from "@/lib/caseStudies";
 
 export default function CaseStudies() {
-  const [active, setActive] = useState(0);
-  const current = CASE_STUDIES[active];
+  const [active, setActive] = useState<number | null>(null);
 
   return (
-    <section id="case-studies" className="relative py-28 md:py-36 border-t border-ink-line">
+    <section className="relative py-20 md:py-24 bg-ivory">
       <div className="max-w-6xl mx-auto px-6 md:px-10">
         <motion.p
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="eyebrow mb-12"
+          className="eyebrow-light mb-10"
         >
-          Real Workflow Case Studies
+          Case Studies
         </motion.p>
 
-        <div className="grid md:grid-cols-12 gap-10 md:gap-16">
-          <div className="md:col-span-4 flex md:flex-col gap-1 overflow-x-auto md:overflow-visible pb-2 md:pb-0">
-            {CASE_STUDIES.map((cs, i) => (
-              <button
-                key={cs.n}
-                onClick={() => setActive(i)}
-                className={`text-left shrink-0 md:shrink px-4 py-4 border-l-2 transition-colors whitespace-nowrap md:whitespace-normal ${
-                  active === i
-                    ? "border-brass text-paper"
-                    : "border-ink-line text-paper-dim hover:text-paper"
-                }`}
-              >
-                <span className="font-mono text-[11px] text-brass mr-3">{cs.n}</span>
-                <span className="font-display text-lg">{cs.title}</span>
-              </button>
-            ))}
-          </div>
-
-          <div className="md:col-span-8">
-            <AnimatePresence mode="wait">
+        <div className="grid sm:grid-cols-2 gap-4">
+          {CASE_STUDIES.map((cs, i) => {
+            const isActive = active === i;
+            return (
               <motion.div
-                key={current.n}
-                initial={{ opacity: 0, y: 12 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -8 }}
-                transition={{ duration: 0.35 }}
-                className="border border-ink-line p-8 md:p-10"
+                key={cs.n}
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.06 }}
+                className="border border-ivory-line"
               >
-                <h3 className="font-display text-3xl md:text-4xl text-paper">{current.title}</h3>
-                <dl className="mt-8 grid sm:grid-cols-3 gap-6">
-                  <div>
-                    <dt className="eyebrow mb-2">Input</dt>
-                    <dd className="text-[14px] leading-relaxed text-paper-dim">{current.input}</dd>
+                <button
+                  onClick={() => setActive(isActive ? null : i)}
+                  aria-expanded={isActive}
+                  className="w-full text-left p-6 flex flex-col gap-2"
+                >
+                  <div className="flex items-center justify-between">
+                    <span className="font-mono text-[11px] text-gold">{cs.n}</span>
+                    <motion.span
+                      animate={{ rotate: isActive ? 45 : 0 }}
+                      transition={{ duration: 0.3 }}
+                      className="text-xl text-charcoal-dim"
+                      aria-hidden
+                    >
+                      +
+                    </motion.span>
                   </div>
-                  <div>
-                    <dt className="eyebrow mb-2">Process</dt>
-                    <dd className="text-[14px] leading-relaxed text-paper-dim">{current.process}</dd>
-                  </div>
-                  <div>
-                    <dt className="eyebrow mb-2">Output</dt>
-                    <dd className="text-[14px] leading-relaxed text-paper">{current.output}</dd>
-                  </div>
-                </dl>
+                  <span className="font-display text-xl md:text-2xl text-charcoal">{cs.title}</span>
+                  <span className="text-[14px] text-charcoal-dim">{cs.oneLine}</span>
+                </button>
+
+                <AnimatePresence initial={false}>
+                  {isActive && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: "auto", opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.3, ease: "easeInOut" }}
+                      className="overflow-hidden"
+                    >
+                      <dl className="px-6 pb-6 grid grid-cols-1 gap-4 border-t border-ivory-line pt-5">
+                        <div>
+                          <dt className="eyebrow-light mb-1.5">Input</dt>
+                          <dd className="text-[13px] leading-relaxed text-charcoal-dim">{cs.input}</dd>
+                        </div>
+                        <div>
+                          <dt className="eyebrow-light mb-1.5">Process</dt>
+                          <dd className="text-[13px] leading-relaxed text-charcoal-dim">{cs.process}</dd>
+                        </div>
+                        <div>
+                          <dt className="eyebrow-light mb-1.5">Output</dt>
+                          <dd className="text-[13px] leading-relaxed text-charcoal">{cs.output}</dd>
+                        </div>
+                      </dl>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </motion.div>
-            </AnimatePresence>
-          </div>
+            );
+          })}
         </div>
       </div>
     </section>

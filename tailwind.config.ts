@@ -8,14 +8,23 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        ink: "#0B0C0E",
-        "ink-raised": "#131417",
-        "ink-line": "#242422",
-        paper: "#F4F1E9",
-        "paper-dim": "#B7B2A4",
-        brass: "#B08D4F",
-        "brass-soft": "#7D6B45",
-        stone: "#6E6A5F",
+        // Light ("editorial page") surface
+        ivory: "#F3EEE3",
+        "ivory-raised": "#EBE4D4",
+        "ivory-line": "#DCD3BE",
+        charcoal: "#221F1A",
+        "charcoal-dim": "#8C8573",
+
+        // Dark ("editorial ink") surface — deep charcoal, never pure black
+        ink: "#221F1B",
+        "ink-raised": "#2B2822",
+        "ink-line": "#3C3730",
+        cream: "#F3EEE3",
+        "cream-dim": "#B4AC98",
+
+        // Shared restrained accent
+        gold: "#A9812E",
+        "gold-soft": "#C9A227",
       },
       fontFamily: {
         display: ["var(--font-fraunces)", "Georgia", "serif"],
@@ -25,10 +34,7 @@ const config: Config = {
       letterSpacing: {
         widest2: "0.28em",
       },
-      backgroundImage: {
-        "grid-lines":
-          "linear-gradient(to right, rgba(244,241,233,0.045) 1px, transparent 1px), linear-gradient(to bottom, rgba(244,241,233,0.045) 1px, transparent 1px)",
-      },
+
     },
   },
   plugins: [],

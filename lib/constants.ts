@@ -2,12 +2,13 @@
 // It is used everywhere the site links to LinkedIn.
 export const LINKEDIN_URL = "https://www.linkedin.com/in/your-profile/";
 
-export const SITE_NAME = "Deepak";
+export const FULL_NAME = "Deepak Chauhan";
+export const POSITIONING = "Real Estate Research × Analytics × AI";
 
+// Nav order follows the page's actual reading order: About → AI → Work → Proof.
 export const NAV_ITEMS = [
   { label: "About", href: "#about" },
+  { label: "AI", href: "#ai" },
   { label: "Work", href: "#work" },
-  { label: "AI Workbench", href: "#workbench" },
-  { label: "Case Studies", href: "#case-studies" },
-  { label: "Impact", href: "#impact" },
+  { label: "Proof", href: "#proof" },
 ] as const;

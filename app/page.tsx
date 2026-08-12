@@ -1,33 +1,23 @@
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
-import About from "@/components/About";
-import WhatIDo from "@/components/WhatIDo";
+import WhoAndWhat from "@/components/WhoAndWhat";
 import AIWorkflow from "@/components/AIWorkflow";
-import AIWorkbench from "@/components/AIWorkbench";
-import ExcelHighlight from "@/components/ExcelHighlight";
-import PromptDemo from "@/components/PromptDemo";
+import SelectedWork from "@/components/SelectedWork";
+import Proof from "@/components/Proof";
 import CaseStudies from "@/components/CaseStudies";
-import Impact from "@/components/Impact";
-import Philosophy from "@/components/Philosophy";
-import ToolStack from "@/components/ToolStack";
-import Footer from "@/components/Footer";
+import PhilosophyAndCTA from "@/components/PhilosophyAndCTA";
 
 export default function Home() {
   return (
     <main>
       <Navigation />
       <Hero />
-      <About />
-      <WhatIDo />
+      <WhoAndWhat />
       <AIWorkflow />
-      <AIWorkbench />
-      <ExcelHighlight />
-      <PromptDemo />
+      <SelectedWork />
+      <Proof />
       <CaseStudies />
-      <Impact />
-      <Philosophy />
-      <ToolStack />
-      <Footer />
+      <PhilosophyAndCTA />
     </main>
   );
 }

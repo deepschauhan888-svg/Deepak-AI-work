@@ -28,22 +28,22 @@ const SITE_URL = "https://how-i-work-with-ai.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "How I Work With AI — Deepak",
+  title: "How I Work With AI — Deepak Chauhan",
   description:
-    "An interactive showcase of how I use AI across real estate research, analytics, valuation, design, automation and problem-solving.",
+    "An interactive showcase of how I use AI across real estate research, analytics, valuation, design and automation.",
   openGraph: {
-    title: "How I Work With AI — Deepak",
+    title: "How I Work With AI — Deepak Chauhan",
     description:
-      "An interactive showcase of how I use AI across real estate research, analytics, valuation, design, automation and problem-solving.",
+      "An interactive showcase of how I use AI across real estate research, analytics, valuation, design and automation.",
     url: SITE_URL,
     siteName: "How I Work With AI",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "How I Work With AI — Deepak",
+    title: "How I Work With AI — Deepak Chauhan",
     description:
-      "An interactive showcase of how I use AI across real estate research, analytics, valuation, design, automation and problem-solving.",
+      "An interactive showcase of how I use AI across real estate research, analytics, valuation, design and automation.",
   },
   icons: {
     icon: "/favicon.svg",
@@ -57,7 +57,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${fraunces.variable} ${inter.variable} ${plexMono.variable}`}>
-      <body className="font-body bg-ink text-paper antialiased">{children}</body>
+      <body className="font-body bg-ivory text-charcoal antialiased">{children}</body>
     </html>
   );
 }

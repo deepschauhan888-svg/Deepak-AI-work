@@ -92,7 +92,7 @@ export default function AIWorkbench() {
               <div className="mt-8">
                 <p className="eyebrow mb-4">AI helps with</p>
                 <ul className="space-y-3">
-                  {active.aiHelpsWith.map((point) => (
+                  {(active.aiHelpsWith ?? []).map((point) => (
                     <li key={point} className="flex gap-3 text-[15px] leading-relaxed text-paper-dim">
                       <span className="text-brass mt-[3px]">—</span>
                       <span>{point}</span>

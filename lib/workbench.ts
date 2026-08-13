@@ -2,9 +2,6 @@ export type WorkbenchItem = {
   n: string;
   title: string;
   blurb: string;
-  tagline?: string;
-  aiHelpsWith?: string[];
-  humanLed?: string;
 };
 
 export const WORKBENCH: WorkbenchItem[] = [

@@ -1,6 +1,5 @@
-// Replace this single constant with your real LinkedIn profile URL.
-// It is used everywhere the site links to LinkedIn.
-export const LINKEDIN_URL = "https://www.linkedin.com/in/your-profile/";
+// Single source of truth for the LinkedIn URL, used by every LinkedIn link on the site.
+export const LINKEDIN_URL = "https://www.linkedin.com/in/chauhan09deepak/";
 
 export const FULL_NAME = "Deepak Chauhan";
 export const POSITIONING = "Real Estate Research × Analytics × AI";

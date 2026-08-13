@@ -97,7 +97,7 @@ export default function Hero() {
             <div
               className="relative aspect-[4/5] w-full max-w-[280px] sm:max-w-xs md:max-w-none md:w-auto md:h-[46vh] md:min-h-[320px] md:max-h-[520px] border border-ivory-line bg-charcoal"
               style={{
-                backgroundImage: "url('/portrait.jpg')",
+                backgroundImage: "url('/portrait.png')",
                 backgroundSize: "cover",
                 backgroundPosition: "center top",
               }}

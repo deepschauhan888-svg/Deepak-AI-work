@@ -98,8 +98,9 @@ export default function Hero() {
               className="relative aspect-[4/5] w-full max-w-[280px] sm:max-w-xs md:max-w-none md:w-auto md:h-[46vh] md:min-h-[320px] md:max-h-[520px] border border-ivory-line bg-charcoal"
               style={{
                 backgroundImage: "url('/portrait.png')",
-                backgroundSize: "cover",
-                backgroundPosition: "center top",
+                backgroundSize: "contain",
+                backgroundPosition: "center center",
+                backgroundRepeat: "no-repeat",
               }}
             >
               <div className="absolute inset-0 ring-1 ring-inset ring-black/5" />
